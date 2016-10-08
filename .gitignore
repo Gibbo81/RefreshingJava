@@ -11,3 +11,7 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 / ABeginnerGuideSixthEdition/nbproject/private/
+/Introducing_Data_Types_and_Operators_2/nbproject/private/
+/ ABeginnerGuideSixthEdition/build/
+/ ABeginnerGuideSixthEdition/dist/
+/Introducing_Data_Types_and_Operators_2/build/
