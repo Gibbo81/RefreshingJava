@@ -26,8 +26,21 @@ public class Main {
         
         int k = 535_45_4;       //Its' the same of 535454
         String i= "sdas";
+        
+        System.out.println("cilinder volume is: " +Volume(10,30));
+        
+        ShortCircuit();
+        
+        byte a=10;
+        byte b;
+
+        b=(byte)(a+a);  //Bte operatio return an int, if you want you must cast it back
     }
     
+    public static double Volume(double radius, double height)
+    {
+        return 3.1416 *(radius*radius) *height;        
+    }
     
     public static void Char(int n)
     {
@@ -36,7 +49,27 @@ public class Main {
         c= (char)n;
         System.out.println("C values: "+ c);
         c++;
-        System.out.println("C values: "+ c);
+        System.out.println("C values: "+ c);      
+    }
+    
+    public static void ShortCircuit()
+    {
+        System.out.println("| and & will always elaborete both side");
+        System.out.println("|| and && will elaborete left side only if necessary");
+        System.out.println("put a break point and see :-)");
         
+        System.out.println(ReturnTrue()|ReturnFalse()); //bOTH
+        System.out.println(ReturnTrue()||ReturnFalse());//ONLY LEFT
+        System.out.println(ReturnFalse()&ReturnTrue());//bOTH
+        System.out.println(ReturnFalse()&&ReturnTrue());//ONLY LEFT
+    }
+    
+    public static boolean ReturnTrue()
+    {
+        return true;
+    }
+    public static boolean ReturnFalse()
+    {
+        return false;
     }
 }
