@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package IntroducingDataTypesandOperators_02;
+package C02IntroducingDataTypesandOperators;
 
-import Foundamentals_01.Gallons; 
+import C01Foundamentals.Gallons; 
 
 
 /**
