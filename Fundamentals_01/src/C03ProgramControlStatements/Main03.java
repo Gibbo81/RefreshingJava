@@ -1,24 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package C03ProgramControlStatements;
 
 import java.io.IOException;
 
-/**
- *
- * @author cpsistemi
- */
-public class Main03 {
+public class Main03 extends InputReader {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
-        //ReadChar();
-        System.out.println("Read: " + ReadString());
+        ReadChar();
+        System.out.println("--------------------------------------------------");
+        System.out.print("Read: " + InputReader.ReadString());
         
         System.out.println("--------------------------------------------------");
         System.out.println("eIfLadder");
@@ -40,29 +33,22 @@ public class Main03 {
         SwitchStackingCases(6);
         SwitchStackingCases(8);
         SwitchStackingCases(10);
+        
+        System.out.println("--------------------------------------------------");
+        PrintAlphabet();
+        
+        System.out.println("--------------------------------------------------");
+        CharGuess('r');
     }
     
     private static void ReadChar() throws IOException   //TODO: REMEMBER!!!
     {                       //If in java we do not catch an exception
         char ch;            //The method must signal it to the upper method in the signature
-        
         ch = (char)System.in.read();
-        System.out.print("the char read is: " + ch);
+        System.out.println("the char read is: " + ch);
         
     }
-    
-    private static String ReadString() throws IOException
-    {
-        byte[] buffer = new byte[100];
-        String result= "";
-        
-        int count = System.in.read(buffer);
-
-        for (int x=0; x<count; x++)
-            result= result + (char)buffer[x];
-        return result;
-    }
-    
+   
     private static void IfElseIfLadder(int value)
     {//TODO: REMEMBER!!!
         System.out.println("as soon as one condition is meet the toher one are not evalueted");
@@ -126,7 +112,32 @@ public class Main03 {
                 break;
             default:
                 System.out.println("default >7");
+        } 
+    }
+    private static void PrintAlphabet()
+    {
+        char ch='a';
+        while(ch<='z')
+        {
+            System.out.println("Alphabet character :" + ch);
+            ch++;
         }
-        
+    }
+    private static void CharGuess(char theOne) throws IOException
+    {
+        System.out.println("Reapet untillyou will fiend the answer");
+        char answer, ignore;
+        int count=0;
+        do
+        {
+            //System.out.println("give a char");
+            count++;
+            System.out.println("tentativo :"+count);
+            answer = (char)System.in.read();
+            do {
+                ignore = (char) System.in.read();
+            } while(ignore != '\n');
+        }
+        while(answer!=theOne);
     }
 }
