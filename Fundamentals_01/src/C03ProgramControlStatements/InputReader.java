@@ -16,7 +16,7 @@ public class InputReader {
         }
         return result;
     }
-    private static void BufferCleaner() throws IOException
+    public static void BufferCleaner() throws IOException
     {
         while((System.in.available()>0))
         {

@@ -9,10 +9,10 @@ public class Main03 extends InputReader {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
-        ReadChar();
-        System.out.println("--------------------------------------------------");
-        System.out.print("Read: " + InputReader.ReadString());
-        
+//        ReadChar();
+//        System.out.println("--------------------------------------------------");
+//        System.out.print("Read: " + InputReader.ReadString());
+//        
         System.out.println("--------------------------------------------------");
         System.out.println("eIfLadder");
         IfElseIfLadder(2);
@@ -39,6 +39,10 @@ public class Main03 extends InputReader {
         
         System.out.println("--------------------------------------------------");
         CharGuess('r');
+        
+        System.out.println("--------------------------------------------------");
+        System.out.println("Printing even numbers");
+        PrintEvenNumber(4,97);
     }
     
     private static void ReadChar() throws IOException   //TODO: REMEMBER!!!
@@ -130,14 +134,23 @@ public class Main03 extends InputReader {
         int count=0;
         do
         {
-            //System.out.println("give a char");
+            InputReader.BufferCleaner();
             count++;
             System.out.println("tentativo :"+count);
-            answer = (char)System.in.read();
-            do {
-                ignore = (char) System.in.read();
-            } while(ignore != '\n');
+            answer = (char)System.in.read();           
         }
         while(answer!=theOne);
     }
+    private static void PrintEvenNumber(int start, int stop)
+    {
+        for (int x=start; x<=stop; x++)
+//        {             //bad book soluton :-(
+//            if ((x%2)==1)
+//                continue;
+//            System.out.println("Even number: " + x);
+//        }
+            if((x%2)==0)
+                System.out.println("Even number: " + x);
+    }
+    
 }
