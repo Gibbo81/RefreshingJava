@@ -16,4 +16,9 @@ public class Vehicle {
     {
         return fuelcapacity * milesforgallon;
     }
+    
+    public double fuelNeeded(double miles)
+    {
+        return miles/milesforgallon;
+    }
 }
