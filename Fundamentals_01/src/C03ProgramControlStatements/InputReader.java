@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class InputReader {
     
-    protected static String ReadString() throws IOException {
+    public static String ReadString() throws IOException {
         
         BufferCleaner();
       
