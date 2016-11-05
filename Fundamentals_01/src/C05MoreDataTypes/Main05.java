@@ -20,6 +20,38 @@ public class Main05 {
         for (int x=0; x<3; x++)
             System.out.println("raggedarray[x].length: "+raggedarray[x].length + " It's the lenght of the array number "+x);
     
+        System.out.println("--------------------------------------------------");
+        System.out.println("Work with self made queue");
+        Queue q= new Queue(4);
+        q.Insert(10);
+        q.Insert(9);
+        q.Insert(4);
+        q.Insert(5);
+        q.Insert(50);
+        System.out.println("q.Read(): " + q.Read());
+        System.out.println("q.Read(): " + q.Read());
+        System.out.println("q.Read(): " + q.Read());
+        System.out.println("q.Read(): " + q.Read());
+        System.out.println("q.Read(): " + q.Read());
+        System.out.println("q.Read(): " + q.Read());
+        System.out.println("q.Read(): " + q.Read());
+        System.out.println("q.Read(): " + q.Read());
+        System.out.println("--------------------------------------------------");
+        System.out.println("for Each");
+        int[] array = {1,2,3,6,12};
+        int result=0;
+        for (int y : array)
+            result= result + y;
+        System.out.println("Result: "+ result);        
+        System.out.println("--------------------------------------------------");
+        PrintCommandLineArguments(args);
+        System.out.println("--------------------------------------------------");
+        
+        System.out.println("--------------------------------------------------");
+        
+        System.out.println("--------------------------------------------------");
+        
+        System.out.println("--------------------------------------------------");
     }
     
     private static int[] CreateArray(int maxNumber)
@@ -40,5 +72,13 @@ public class Main05 {
                 result[n][k]=n+k;
         }
         return result;
+    }
+    
+    private static void PrintCommandLineArguments(String[] args)
+    {
+        int count=0;
+        System.out.println("There are "+args.length + " arguments");
+        for(String s : args)
+            System.out.println("Argument " + count++ + " is " + s);
     }
 }
