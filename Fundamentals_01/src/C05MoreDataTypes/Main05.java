@@ -47,6 +47,10 @@ public class Main05 {
         PrintCommandLineArguments(args);
         System.out.println("--------------------------------------------------");
         
+        System.out.println("AbsluteValueTernaryOperator(-23): "+AbsluteValueTernaryOperator(-23));
+        System.out.println("AbsluteValueTernaryOperator(5433): "+AbsluteValueTernaryOperator(5433));
+        System.out.println("AbsluteValueTernaryOperator(539): "+AbsluteValueTernaryOperator(539));
+        System.out.println("AbsluteValueTernaryOperator(-4432): "+AbsluteValueTernaryOperator(-4432));
         System.out.println("--------------------------------------------------");
         
         System.out.println("--------------------------------------------------");
@@ -80,5 +84,10 @@ public class Main05 {
         System.out.println("There are "+args.length + " arguments");
         for(String s : args)
             System.out.println("Argument " + count++ + " is " + s);
+    }
+    
+    private static int AbsluteValueTernaryOperator(int x)
+    {
+        return x>0 ? x : -x;
     }
 }
