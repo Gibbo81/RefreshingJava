@@ -52,10 +52,6 @@ public class Main05 {
         System.out.println("AbsluteValueTernaryOperator(539): "+AbsluteValueTernaryOperator(539));
         System.out.println("AbsluteValueTernaryOperator(-4432): "+AbsluteValueTernaryOperator(-4432));
         System.out.println("--------------------------------------------------");
-        
-        System.out.println("--------------------------------------------------");
-        
-        System.out.println("--------------------------------------------------");
     }
     
     private static int[] CreateArray(int maxNumber)
