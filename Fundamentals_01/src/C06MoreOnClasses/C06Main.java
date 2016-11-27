@@ -22,12 +22,6 @@ public class C06Main {
         VarargsClass.VarargsTestMixedArgument(1.5,3);
         VarargsClass.VarargsTestMixedArgument(1.8,5,4324,5436,65,4645,7645,6);
         System.out.println("--------------------------------------------------");
-        
-        System.out.println("--------------------------------------------------");
-                
-        System.out.println("--------------------------------------------------");
-        
-        System.out.println("--------------------------------------------------");
     }
     
 }
