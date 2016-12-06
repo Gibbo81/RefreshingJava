@@ -1,9 +1,9 @@
 package C04Classes_ObjectsandMethods;
 
 public class Vehicle {
-    private int passengers;
-    private int fuelcapacity;
-    private int milesforgallon;
+    protected int passengers;
+    protected int fuelcapacity;
+    protected int milesforgallon;
     
     public Vehicle(int pass, int fuel, int mfg )
     {

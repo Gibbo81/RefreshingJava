@@ -10,7 +10,11 @@ public class C07Main {
         t2.ShowDim();
         t1.ShowDim();
         System.out.println("--------------------------------------------------");
-                
+        t1= new Triangle(65.4,15.9, "large");
+        t2= new Triangle(t1);
+        TwoDShape t3 = new TwoDShape(99.4,487.67);
+        t3.print();
+        t2.print();
         System.out.println("--------------------------------------------------");
         
         System.out.println("--------------------------------------------------");

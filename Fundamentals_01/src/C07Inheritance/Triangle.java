@@ -8,8 +8,20 @@ public class Triangle extends TwoDShape {
         style=s;
     }
     
+    public Triangle(Triangle t)
+    {
+        super(t);
+        style = t.style;
+    }
+    
     double area()
     {
         return getHeight() * getWidth() /2;
+    }
+    
+    public void print()
+    {
+        super.print();
+        System.out.println(String.format("style: %s",style));
     }
 }

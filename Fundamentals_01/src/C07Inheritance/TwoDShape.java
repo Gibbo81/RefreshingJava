@@ -4,12 +4,18 @@ public class TwoDShape {
     private double width;
     private double height;
     
-    TwoDShape(double w, double h)
+    public TwoDShape(double w, double h)
     {
-        width=w;
-        height=h;
+        width = w;
+        height = h;
     }
 
+    public TwoDShape(TwoDShape tds)
+    {
+        width = tds.width;
+        height = tds.height;
+    }
+    
     public double getWidth() {
         return width;
     }
@@ -29,5 +35,10 @@ public class TwoDShape {
     public void ShowDim()
     {
         System.out.println("Width is "+width+" and height is "+ height);
+    }
+    
+    public void print()
+    {
+        System.out.println(String.format("width: %s, height: %s", width, height));
     }
 }
