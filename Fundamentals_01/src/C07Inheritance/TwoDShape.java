@@ -1,6 +1,6 @@
 package C07Inheritance;
 
-public class TwoDShape {
+public abstract class TwoDShape {
     private double width;
     private double height;
     
@@ -40,5 +40,12 @@ public class TwoDShape {
     public void print()
     {
         System.out.println(String.format("width: %s, height: %s", width, height));
+    }
+    
+    public abstract void Area();
+    
+    public final boolean IsAFigur()
+    {
+        return true;
     }
 }

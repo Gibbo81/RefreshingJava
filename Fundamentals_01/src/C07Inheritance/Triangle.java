@@ -24,4 +24,8 @@ public class Triangle extends TwoDShape {
         super.print();
         System.out.println(String.format("style: %s",style));
     }
+
+    public void Area() {       
+        System.out.println(String.format("Area is %s", getWidth()*getHeight()/2));
+    }
 }

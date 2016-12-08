@@ -1,6 +1,6 @@
 package C07Inheritance;
 
-import C04Classes_ObjectsandMethods.Vehicle; //remeber tou can import only single class
+import C04Classes_ObjectsandMethods.Vehicle; //remeber you can import only single class
 
 public class Truck extends Vehicle  {
     private int _capacity;
