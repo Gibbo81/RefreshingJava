@@ -1,6 +1,6 @@
 package C04Classes_ObjectsandMethods;
 
-import C03ProgramControlStatements.InputReader;
+import C03ProgramControlStatements.*; //import all classes or use --> for a more fine grained C03ProgramControlStatements.InputReader;
 import java.io.IOException;
 
 public class Main04 {
@@ -18,5 +18,7 @@ public class Main04 {
         System.out.println("--------------------------------------------------");
         InputReader.ReadString();
         
+        System.out.println("--------------------------------------------------");
+        System.err.println("a class that is declared public must reside in a file by the same name.");
     }
 }
