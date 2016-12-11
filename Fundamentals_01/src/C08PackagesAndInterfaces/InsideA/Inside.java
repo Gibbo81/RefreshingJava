@@ -4,6 +4,4 @@ inside the other. The only indication is the composite name:
 PackageFather.PackageSon
 C08PackagesAndInterfaces.InsideA
 */
-public class Inside {
-    
-}
+public class Inside {}

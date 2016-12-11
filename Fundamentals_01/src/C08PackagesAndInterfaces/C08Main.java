@@ -13,7 +13,18 @@ public class C08Main {
         System.out.print("Basic one: ");
         b.Show();
         System.out.println("--------------------------------------------------");
-        
+        System.out.println("Working with interface");
+        Serie s = new Serie();
+        s.SetStart(14);
+        System.out.println(String.format("Give me next value: %s",s.GetNext()));
+        System.out.println(String.format("Give me next value: %s",s.GetNext()));
+        System.out.println(String.format("Give me next value: %s",s.GetNext()));
+        System.out.println(String.format("Give me current value: %s",s.GetActual()));
+        s.SetStart(100);
+        s.Reset();
+        System.out.println(String.format("Give me current value: %s",s.GetActual()));
+        System.out.println(String.format("Give me next value: %s",s.GetNext()));
+        System.out.println(String.format("Give me current value: %s",s.GetActual()));
         System.out.println("--------------------------------------------------");
         
         System.out.println("--------------------------------------------------");
@@ -21,6 +32,5 @@ public class C08Main {
         System.out.println("--------------------------------------------------");
         
         System.out.println("--------------------------------------------------");
-    }
-    
+    }  
 }
