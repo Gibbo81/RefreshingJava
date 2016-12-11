@@ -5,3 +5,8 @@ public interface ISeries {
     void Reset();
     void SetStart(int starting);
 }
+
+//An interface can extend another one
+interface ISeriesPlus extends ISeries{
+    void Optimaze();
+}

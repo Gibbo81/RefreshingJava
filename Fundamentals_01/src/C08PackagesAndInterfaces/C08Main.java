@@ -2,7 +2,7 @@ package C08PackagesAndInterfaces;
 
 import C08PackagesAndInterfaces.InsideA.*; //Import all
 
-public class C08Main {
+public class C08Main implements IConstant{
 
     public static void main(String[] args) {
         System.out.println("--------------------------------------------------");
@@ -26,9 +26,17 @@ public class C08Main {
         System.out.println(String.format("Give me next value: %s",s.GetNext()));
         System.out.println(String.format("Give me current value: %s",s.GetActual()));
         System.out.println("--------------------------------------------------");
-        
+        System.out.println("Variables can be declared in an interface, but they are implicitly public, static, and final");
+        System.out.println(String.format("Read from interface Min: %s", MIN));
+        System.out.println(String.format("Read from interface Max: %s", MAX));
+        System.out.println(String.format("Read from interface Error: '%s'", ERROR));
+        System.out.println("DO NOT USE: bad practice");
         System.out.println("--------------------------------------------------");
-        
+        System.out.println("With Java 8 is possible to create Interfaces with default methods implementation");
+        UseIDefaultMethods u= new UseIDefaultMethods();
+        System.out.println(String.format("Use default implementatio of GetTrue(): %s", u.GetTrue()));
+        System.out.println(String.format("Use default implementatio of GetFalse(): %s", u.GetFalse()));        
+        System.out.println("DO NOT USE: bad practice");
         System.out.println("--------------------------------------------------");
         
         System.out.println("--------------------------------------------------");
