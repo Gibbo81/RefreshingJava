@@ -38,7 +38,11 @@ public class C08Main implements IConstant{
         System.out.println(String.format("Use default implementatio of GetFalse(): %s", u.GetFalse()));        
         System.out.println("DO NOT USE: bad practice");
         System.out.println("--------------------------------------------------");
-        
+        System.out.println("With Java 8 interface can declare also static methods");
+        System.out.println(String.format("Use static method IDefaultMethods.GetZero(): %s", 
+                                          IDefaultMethods.GetZero()));        
+        System.out.println("static interface methods are not inherited by either an implementing class or a subinterface.");
+        System.out.println("DO NOT USE: bad practice");
         System.out.println("--------------------------------------------------");
     }  
 }
