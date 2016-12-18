@@ -1,2 +1,0 @@
-C08PackagesAndInterfaces.ISeries
-C08PackagesAndInterfaces.ISeriesPlus
