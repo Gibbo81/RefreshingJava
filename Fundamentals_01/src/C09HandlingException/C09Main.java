@@ -25,7 +25,8 @@ public class C09Main {
         System.out.println("It's possibloe to catch more exception in onecatch block!");
         HandleMultipleException();
         System.out.println("--------------------------------------------------");
-
+        System.out.println("Personalized Exception with chained exception");
+        ThrowPersonalException();
         System.out.println("--------------------------------------------------");
         
         System.out.println("--------------------------------------------------");
@@ -125,6 +126,29 @@ public class C09Main {
             {
               System.out.println("Catch Both Exception e: " + e );
             }
+        }
+    }
+    
+    private static void ThrowPersonalException()
+    {
+        try
+        {
+            throw new NonIntResultException(1,
+                                            3,
+                                            "external Exception", 
+                                            new IOException("InternalException"));
+        }
+        catch(NonIntResultException e)
+        {
+            System.out.println(e);
+        }
+        try
+        {
+            throw new NonIntResultException(1,3);
+        }
+        catch(NonIntResultException e)
+        {
+            System.out.println(e);
         }
     }
 }
