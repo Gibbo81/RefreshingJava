@@ -26,13 +26,7 @@ public class C09Main {
         HandleMultipleException();
         System.out.println("--------------------------------------------------");
         System.out.println("Personalized Exception with chained exception");
-        ThrowPersonalException();
-        System.out.println("--------------------------------------------------");
-        
-        System.out.println("--------------------------------------------------");
-
-        System.out.println("--------------------------------------------------");
-        
+        ThrowPersonalException();     
     }
     
     private static void HandleSimpleException()
