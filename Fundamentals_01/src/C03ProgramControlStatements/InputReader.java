@@ -8,7 +8,7 @@ public class InputReader {
         
         BufferCleaner();
       
-        byte[] buffer = new byte[300];
+        byte[] buffer = new byte[3000];
         String result = "";
         int count = System.in.read(buffer);
         for (int x = 0; x < count; x++) {

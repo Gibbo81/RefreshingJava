@@ -1,5 +1,9 @@
 package C10UsingI_O;
-import java.io.Console;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class C10Main {
@@ -9,9 +13,6 @@ public class C10Main {
      */
     public static void main(String[] args) throws Exception{
         System.out.println("--------------------------------------------------");
-//        String s = InputReader.ReadString();
-//        System.out.println(s);
-        System.out.println("--------------------------------------------------");
         System.out.println("Read from binary file");
         ReadFromBynaryFile();       
         System.out.println("--------------------------------------------------");
@@ -20,7 +21,8 @@ public class C10Main {
         System.out.println("--------------------------------------------------");
         System.out.println("Using Try-with-resources, java equivalent of using(...) from JDK7");
         try(BinaryReadFromFile b =new BinaryReadFromFile("C:\\JavaCode\\RefreshingJava\\Fundamentals_01\\src"
-                                                       + "\\C10UsingI_O\\ReadTo.txt"))
+                                                   
+                + "\\C10UsingI_O\\ReadTo.txt"))
         {
             System.out.println(b.ReadAll());
         }
@@ -35,8 +37,21 @@ public class C10Main {
 //        
 //        System.out.print("Reading from the conole: ");
 //        System.out.println(String.format("Read: %s", c.readLine()));
-        System.out.println("IT's an open bug :-):-):-):-)");
+        System.out.println("IT's an open bug :-):-):-):-)");      
+        System.out.println("--------------------------------------------------");
+        System.out.println("We can make another better console reader using BufferedReader");
+        InputReader cr = new InputReader(System.in);
+        System.out.println("Read a String");
+        System.out.println("First Read: "+ cr.ReadString());
+        System.out.println("Now read an integer");
+        System.out.println("Second Read the integer: "+ cr.ReadInt());
+        System.out.println("--------------------------------------------------");
+        System.out.println("Using FileReader and FileWriter");
+        BufferReaderAndBufferWriter();
         
+        System.out.println("--------------------------------------------------");
+
+        System.out.println("--------------------------------------------------");
         
         System.out.println("--------------------------------------------------");
 
@@ -93,6 +108,25 @@ public class C10Main {
             catch(Exception e)
             {
                 System.out.println("exception " + e);
+            }
+        }
+    }
+    
+    private static void BufferReaderAndBufferWriter() throws IOException
+    {
+        try (BufferedReader br = new BufferedReader(new FileReader("C:\\JavaCode\\"
+                                                    + "RefreshingJava\\Fundamentals_01\\src\\"
+                                                    + "C10UsingI_O\\ReadFrom.txt"));
+            BufferedWriter bw = new BufferedWriter(new FileWriter("C:\\JavaCode\\"
+                                                    + "RefreshingJava\\Fundamentals_01\\src\\"
+                                                    + "C10UsingI_O\\BuffereWriteTo.txt"))
+            )
+        {
+            String s;
+            while ((s=br.readLine())!=null)
+            {
+                System.out.println(s);
+                bw.write(s + "\n");
             }
         }
     }
