@@ -12,7 +12,9 @@ public class FirstRunnambleThread implements Runnable {
     @Override
     public void run() 
     {
-        System.out.println(String.format("Thread %s :Starting the thread",Thread.currentThread().getName()));
+        System.out.println(String.format("Thread %s :Starting the thread with priority %s",
+                                            Thread.currentThread().getName(), 
+                                            Thread.currentThread().getPriority()));
         Sleep(_sleepTime);  
         System.out.println(String.format("Thread %s :After the sleep working",Thread.currentThread().getName()));
         Sleep(_sleepTime);
