@@ -48,14 +48,7 @@ public class C10Main {
         System.out.println("--------------------------------------------------");
         System.out.println("Using FileReader and FileWriter");
         BufferReaderAndBufferWriter();
-        
-        System.out.println("--------------------------------------------------");
 
-        System.out.println("--------------------------------------------------");
-        
-        System.out.println("--------------------------------------------------");
-
-        System.out.println("--------------------------------------------------");
     }  
     
     private static String ReadFromBynaryFile() 
