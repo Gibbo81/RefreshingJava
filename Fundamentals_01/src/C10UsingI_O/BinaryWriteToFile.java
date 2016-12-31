@@ -18,7 +18,9 @@ public class BinaryWriteToFile implements AutoCloseable {
         _output.write(toWrite.getBytes());      
     }
 
-    @Override
+    //It's not really necessary. It only make a check to see if a super class has a method
+    //with that signature, or give an error. You can make override without @Override
+    @Override       
     public void close() throws IOException {
         _output.close();
     }
