@@ -1,5 +1,9 @@
 package C12Enumerations_Autoboxing_StaticImport_Annotations;
 
+import static java.lang.Math.sqrt;
+import static java.lang.Math.pow;
+import static java.lang.System.*;
+
 public class C12Main {
 
     public static void main(String[] args) throws InterruptedException {
@@ -34,14 +38,22 @@ public class C12Main {
         t1.join();
         t2.join();
         System.out.println("---------------------------------------------------------------------------");
-
+        System.out.println("AutoBox and Auto-unbox.....Useful?");
+        Integer i = 100;    //auto-box
+        int pi = i;         //auto-unbox
+        System.out.println("---------------------------------------------------------------------------");
+        System.out.println("It's possible to use static import to 'import' static member of a class");
+        double a =12;
+        double b =7;
+        double c =6;
+        out.println("sqrt(pow(a,c)*b): " +sqrt(pow(a,c)*b));        
+                
+                
         System.out.println("---------------------------------------------------------------------------");
         
         System.out.println("---------------------------------------------------------------------------");
-        
-        System.out.println("---------------------------------------------------------------------------");
 
         System.out.println("---------------------------------------------------------------------------");
-    }
     
+    }   
 }

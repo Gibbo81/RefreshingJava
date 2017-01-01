@@ -66,4 +66,9 @@ public class LightSemaphore implements Runnable {
     public LightColor getLc() {
         return _lc;
     }
+    
+    @Deprecated
+    public LightColor OLDgetLc() {
+        return _lc;
+    } 
 }
