@@ -46,14 +46,6 @@ public class C12Main {
         double a =12;
         double b =7;
         double c =6;
-        out.println("sqrt(pow(a,c)*b): " +sqrt(pow(a,c)*b));        
-                
-                
-        System.out.println("---------------------------------------------------------------------------");
-        
-        System.out.println("---------------------------------------------------------------------------");
-
-        System.out.println("---------------------------------------------------------------------------");
-    
+        out.println("sqrt(pow(a,c)*b): " +sqrt(pow(a,c)*b));         
     }   
 }

@@ -18,7 +18,7 @@ public class LightSemaphore implements Runnable {
         _lc = lc;
     }
     
-    LightSemaphore ()
+    public LightSemaphore ()
     {
         _lc = LightColor.red;
     }
@@ -71,4 +71,10 @@ public class LightSemaphore implements Runnable {
     public LightColor OLDgetLc() {
         return _lc;
     } 
+    
+    @Override 
+    public String toString()
+    {
+        return "The color is: "+ _lc;
+    }
 }
