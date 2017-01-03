@@ -1,5 +1,0 @@
-C11Multithreading.SynchronizedSumGeneric
-C11Multithreading.SynchronizedSum
-C11Multithreading.AddNoSinchro
-C11Multithreading.Add
-C11Multithreading.SynchronizedSum2

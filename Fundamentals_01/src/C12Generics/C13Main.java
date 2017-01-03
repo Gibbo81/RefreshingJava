@@ -1,14 +1,16 @@
 package C12Generics;
 
 import C12Enumerations_Autoboxing_StaticImport_Annotations.LightSemaphore;
+import java.util.ArrayList;
+import java.util.List;
 
 public class C13Main {
 
     public static void main(String[] args) {
         System.out.println("GENERICS firast use");
-        SimpleGeneric<Integer> simpleint = new SimpleGeneric<>(34); //Not need to specify a 2° time!
+        SimpleGeneric<Integer> simpleint = new SimpleGeneric<>(34); //Not need to specify a 2° time! called diamond operator <>
         SimpleGeneric<String>  simplestr = new SimpleGeneric<>("thirtyfour");
-        SimpleGeneric<LightSemaphore>  simplels = new SimpleGeneric<>(new LightSemaphore());
+         SimpleGeneric<LightSemaphore>  simplels = new SimpleGeneric<>(new LightSemaphore());
         TestGeneric(simpleint);
         TestGeneric(simplestr);
         TestGeneric(simplels);
@@ -39,6 +41,22 @@ public class C13Main {
         System.out.println("rc.IsGreaterThan10(34): " + rc.IsGreaterThan10(34));
         System.out.println("ra.IsGreaterThan10(9.57)" + ra.IsGreaterThan10(9.57));
         
+        System.out.println("---------------------------------------------------------------------------");
+        System.out.println("It's possible to create a generic interface: interface IContain<T> {...");
+        List<String> l = new ArrayList<String>();   //This is java List equivalent
+        l.add("uno");
+        l.add("due");
+        l.add("tre");
+        IContain<String> conteiner = new Container<>(l);
+        System.out.println("conteiner.Contains(\"due\"): "+conteiner.Contains("due"));
+        System.out.println("conteiner.Contains(\"quatro\"): " + conteiner.Contains("quatro"));
+        
+        System.out.println("---------------------------------------------------------------------------");
+
+        System.out.println("---------------------------------------------------------------------------");
+        
+        System.out.println("---------------------------------------------------------------------------");
+
         System.out.println("---------------------------------------------------------------------------");
         
         System.out.println("---------------------------------------------------------------------------");
