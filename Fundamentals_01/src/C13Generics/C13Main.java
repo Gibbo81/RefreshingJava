@@ -1,4 +1,4 @@
-package C12Generics;
+package C13Generics;
 
 import C12Enumerations_Autoboxing_StaticImport_Annotations.LightSemaphore;
 import java.util.ArrayList;
@@ -50,18 +50,6 @@ public class C13Main {
         IContain<String> conteiner = new Container<>(l);
         System.out.println("conteiner.Contains(\"due\"): "+conteiner.Contains("due"));
         System.out.println("conteiner.Contains(\"quatro\"): " + conteiner.Contains("quatro"));
-        
-        System.out.println("---------------------------------------------------------------------------");
-
-        System.out.println("---------------------------------------------------------------------------");
-        
-        System.out.println("---------------------------------------------------------------------------");
-
-        System.out.println("---------------------------------------------------------------------------");
-        
-        System.out.println("---------------------------------------------------------------------------");
-
-        System.out.println("---------------------------------------------------------------------------");
     }
     
     private static void TestGeneric(SimpleGeneric in)

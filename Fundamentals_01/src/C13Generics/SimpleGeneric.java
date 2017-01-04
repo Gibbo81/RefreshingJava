@@ -1,4 +1,4 @@
-package C12Generics;
+package C13Generics;
 
 public class SimpleGeneric<T> {
     
