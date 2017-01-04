@@ -7,3 +7,11 @@ package C14Lambda;
 interface IMyvalue{
     double GetValue();
 }
+
+interface IMyvalue2{
+    double GetValue(double x);
+}
+
+interface IMyvalue3{
+    double GetValue(double x, double y);
+}
