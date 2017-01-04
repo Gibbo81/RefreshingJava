@@ -1,2 +1,0 @@
-C12Enumerations_Autoboxing_StaticImport_Annotations.Transport
-C12Enumerations_Autoboxing_StaticImport_Annotations.TransportWithSpeed

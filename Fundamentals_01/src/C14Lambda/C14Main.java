@@ -8,7 +8,10 @@ public class C14Main {
 //      the abstract method defined by the functional interface that specifies its target type
         IMyvalue functional_interface   = ()    -> 74.7;
         IMyvalue2 functional_interface2 = x     -> x+1;
-        IMyvalue3 functional_interface3 = (x,y) -> x+1-y;
+        IMyvalue3 functional_interface3 = (x,y) -> {
+            double result = x+1;
+            return result + y;
+        };
         double d = 100.002;
         functional_interface = () -> d;  //d must be final or effectively final
         //d = 00.9;     //This would give a compile error
@@ -20,8 +23,22 @@ public class C14Main {
         System.out.println("lambda expression gives us a way to transform a code segment into an objec");
         System.out.println("---------------------------------------------------------------------------");
 
+        System.out.println("Of course we can also use generic interfaces");
+        IsComparable<Integer> IsFactor = (x, y) -> (x%y)==0; 
+        System.out.println(IsFactor.Test(34,30));
+        System.out.println(IsFactor.Test(34,17));
         System.out.println("---------------------------------------------------------------------------");
         
+        System.out.println("Lambda can be use also as parameters");
+        String base="Happy new year!";
+        StringManipulator sm = new StringManipulator(base);
+        String finals = sm.Manipulate(x ->{         //Signature String Manipulate(IWorkWithString worker){
+                            String result="";
+                            for (int u= x.length()-1; u>=0; u--)
+                                result = result+x.charAt(u);
+                            return result;
+                        });
+        System.out.println(String.format("Bse string is: %s, inverted is:  %s", base,finals));
         System.out.println("---------------------------------------------------------------------------");
 
         System.out.println("---------------------------------------------------------------------------");

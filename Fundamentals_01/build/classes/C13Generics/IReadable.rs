@@ -1,3 +1,0 @@
-C13Generics.IReadable
-C13Generics.ReadableB
-C13Generics.ReadableA
