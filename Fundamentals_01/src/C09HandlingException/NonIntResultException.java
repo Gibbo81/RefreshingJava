@@ -5,7 +5,7 @@ public class NonIntResultException extends Exception {
     private int _b;
     
     public NonIntResultException(int a, int b, String msg, Throwable thr){
-        super(msg, thr);
+        super();
         _a=a;
         _b=b;
     }

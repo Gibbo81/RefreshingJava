@@ -41,8 +41,6 @@ class Add {
         for(int x : n)
         {
             result= result+x;
-            System.out.println("Summing " + x + " for thread " + Thread.currentThread().getName() 
-                              +" partial result " + result);
             Sleep(500);
         }     
         return result;
@@ -60,6 +58,7 @@ class Add {
 class AddNoSinchro extends Add {
     private int result=0;
     
+    @Override
     int sum (int[] n)
     {
         for(int x : n)

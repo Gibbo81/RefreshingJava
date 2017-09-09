@@ -21,6 +21,5 @@ public class C07Main {
         System.out.println("--------------------------------------------------");
         System.out.println("Final Class variable");
         System.out.println(String.format("Final PiGreco variable: %s",PIGRECO));
-    }
-    
+    }  
 }

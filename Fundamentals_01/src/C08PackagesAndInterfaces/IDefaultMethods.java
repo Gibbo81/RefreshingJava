@@ -9,8 +9,7 @@ package C08PackagesAndInterfaces;
 */
 public interface IDefaultMethods {
     
-    default boolean GetFalse()
-    {
+    default boolean GetFalse(){
         return false;
     }
     

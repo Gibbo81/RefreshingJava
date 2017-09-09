@@ -13,16 +13,16 @@ package C12Enumerations_Autoboxing_StaticImport_Annotations;
     //We nee to respect thecostructor's signature.
     private int _speed;
     
-    TransportWithSpeed (int speed)
-    {
-        _speed = speed;
-    }
-    
     int GetSpeed()
     {
         return _speed;
     }
     
+    TransportWithSpeed (int speed)
+    {
+        _speed = speed;
+    }
+        
     @Override 
     public String toString()
     {

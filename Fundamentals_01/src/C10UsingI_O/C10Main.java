@@ -21,8 +21,7 @@ public class C10Main {
         System.out.println("--------------------------------------------------");
         System.out.println("Using Try-with-resources, java equivalent of using(...) from JDK7");
         try(BinaryReadFromFile b =new BinaryReadFromFile("C:\\JavaCode\\RefreshingJava\\Fundamentals_01\\src"
-                                                   
-                + "\\C10UsingI_O\\ReadTo.txt"))
+                                                       + "\\C10UsingI_O\\ReadTo.txt"))
         {
             System.out.println(b.ReadAll());
         }

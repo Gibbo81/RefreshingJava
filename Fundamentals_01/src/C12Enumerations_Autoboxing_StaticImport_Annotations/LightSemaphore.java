@@ -8,11 +8,6 @@ public class LightSemaphore implements Runnable {
     private LightColor _lc;
     private boolean stop = false;
     
-    public void Stop()
-    {
-        stop = true;
-    }
-    
     LightSemaphore (LightColor lc)
     {
         _lc = lc;
@@ -23,6 +18,11 @@ public class LightSemaphore implements Runnable {
         _lc = LightColor.red;
     }
     
+    public void Stop()
+    {
+        stop = true;
+    }
+        
     @Override
     public void run() {
         while (!stop)

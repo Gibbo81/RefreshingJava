@@ -12,6 +12,7 @@ public class Main05 {
         System.out.println("Irregular/Rugged Array");
         System.out.println("In java multidimensional array are created as array of array");
         int nums[] = {1,6,3};
+        int[] num = {1,6,3};
         int[][] raggedarray = CrateIrregularArray(3, nums);
         for (int x=0; x<raggedarray.length; x++)
             for (int k=0; k<raggedarray[x].length; k++)

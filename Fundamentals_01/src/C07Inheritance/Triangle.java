@@ -19,12 +19,14 @@ public class Triangle extends TwoDShape {
         return getHeight() * getWidth() /2;
     }
     
+    @Override
     public void print()
     {
         super.print();
         System.out.println(String.format("style: %s",style));
     }
 
+    @Override
     public void Area() {       
         System.out.println(String.format("Area is %s", getWidth()*getHeight()/2));
     }

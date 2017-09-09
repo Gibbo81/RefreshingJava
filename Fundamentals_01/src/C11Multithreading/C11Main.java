@@ -9,9 +9,11 @@ public class C11Main {
         System.out.println("    ● You can extend the Thread class"); 
         System.out.println("---------------------------------------------------------------------------");
         System.out.println("Starting a simple thread susing Runnable Interface");
-        new Thread(new FirstRunnambleThread(3000), "pippo").start();
+        Thread d = new Thread(new FirstRunnambleThread(3000), "pippo");
+        d.start();
+        
         //t.run(); 
-        //Do not use this. It's a seamèple direct call to the run method of the Runnable 
+        //Do not use this. It's a seample direct call to the run method of the Runnable 
         //Interface. It doesn't start another thread!
         System.out.println("Thread started");
         //As a general rule, a program continues to run until all of its threads have ended. 
@@ -27,7 +29,7 @@ public class C11Main {
         Thread paperino = new ExtendsThread(100, "Paperino");
         paperino.start();
         System.out.println("Waiting for paperino");
-        paperino.join();  //waiting for the copletition of Paprerino
+        paperino.join();  //waiting for the completion of Paprerino
         System.out.println("Paperino compoleted its work, we resumeour!");
         System.out.println("---------------------------------------------------------------------------");
         System.out.println("Synchro beetween threads using Synchronized keyword");
@@ -46,7 +48,7 @@ public class C11Main {
         new Thread(new SynchronizedSumGeneric(ans, n2),"First synchronized Block Sum").start();
         new Thread(new SynchronizedSumGeneric(ans, n),"Second synchronized Block Sum").start();
         System.out.println("---------------------------------------------------------------------------");
-        System.out.println("This is how suspend - resume and stop isimplemeted in java ...."); 
+        System.out.println("This is how suspend - resume and stop is implemeted in java ...."); 
         System.out.println("Do it manually and don't brake the balls...");
         System.out.println("SAD SAD SAD SAD SAD SAD SAD");
         StopSuspendeResume ob1 = new StopSuspendeResume("My Thread");

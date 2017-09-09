@@ -8,9 +8,12 @@ public class C13Main {
 
     public static void main(String[] args) {
         System.out.println("GENERICS firast use");
-        SimpleGeneric<Integer> simpleint = new SimpleGeneric<>(34); //Not need to specify a 2° time! called diamond operator <>
+        Integer in = 34;
+        in = in + 45;
+        SimpleGeneric<Integer> simpleint = new SimpleGeneric<>(in); 
+                                           //Not need to specify a 2° time
         SimpleGeneric<String>  simplestr = new SimpleGeneric<>("thirtyfour");
-         SimpleGeneric<LightSemaphore>  simplels = new SimpleGeneric<>(new LightSemaphore());
+        SimpleGeneric<LightSemaphore>  simplels = new SimpleGeneric<>(new LightSemaphore());
         TestGeneric(simpleint);
         TestGeneric(simplestr);
         TestGeneric(simplels);
@@ -18,7 +21,7 @@ public class C13Main {
         
         System.out.println("---------------------------------------------------------------------------");
         System.out.println("It's possible to have generics a little less generic");
-        System.out.println("We can specify a class/interface to wich all generic must inheritance <T extends IReadable>");
+        System.out.println("We can specify a class/interface to which all generic must inheritance <T extends IReadable>");
         GenericUpperBound<IReadable> ra = new GenericUpperBound<>(new ReadableA());
         GenericUpperBound<IReadable> rb = new GenericUpperBound<>(new ReadableB());        
         //GenericUpperBound<LightSemaphore> rc = new GenericUpperBound<>(new LightSemaphore());         
@@ -36,7 +39,7 @@ public class C13Main {
         System.out.println(rc.CheckTwo(rd));
         
         System.out.println("---------------------------------------------------------------------------");
-        System.out.println("Can create general methods (also static) that use theri specific generics ");       
+        System.out.println("Can create general methods (also static) that use three specific generics ");       
         System.out.println("public <U extends Number> boolean IsGreaterThan10(U number){...");
         System.out.println("rc.IsGreaterThan10(34): " + rc.IsGreaterThan10(34));
         System.out.println("ra.IsGreaterThan10(9.57)" + ra.IsGreaterThan10(9.57));
