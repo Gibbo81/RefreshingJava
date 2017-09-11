@@ -3,11 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/GitHub/RefreshingJava/Fundamentals_01/src/C13Generics/IReadable.java</file>
-            <file>file:/C:/GitHub/RefreshingJava/Fundamentals_01/src/C13Generics/IContain.java</file>
-            <file>file:/C:/GitHub/RefreshingJava/Fundamentals_01/src/C13Generics/C13Main.java</file>
-            <file>file:/C:/GitHub/RefreshingJava/Fundamentals_01/src/C13Generics/GenericUpperBound.java</file>
-            <file>file:/C:/GitHub/RefreshingJava/Fundamentals_01/src/C13Generics/SimpleGeneric.java</file>
+            <file>file:/C:/GitHub/RefreshingJava/Fundamentals_01/src/C14Lambda/StringManipulator.java</file>
+            <file>file:/C:/GitHub/RefreshingJava/Fundamentals_01/src/C14Lambda/C14Main.java</file>
+            <file>file:/C:/GitHub/RefreshingJava/Fundamentals_01/src/C14Lambda/IFunctionalInterface.java</file>
+            <file>file:/C:/GitHub/RefreshingJava/Fundamentals_01/src/C14Lambda/IWorkWithString.java</file>
+            <file>file:/C:/GitHub/RefreshingJava/Fundamentals_01/src/C14Lambda/IIntegerTest.java</file>
+            <file>file:/C:/GitHub/RefreshingJava/Fundamentals_01/src/C14Lambda/pippo.java</file>
         </group>
     </open-files>
 </project-private>

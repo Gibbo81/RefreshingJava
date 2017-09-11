@@ -1,6 +1,7 @@
 package C14Lambda;
 
 import java.io.IOException;
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class C14Main {
@@ -56,7 +57,7 @@ public class C14Main {
         }      
         System.out.println("---------------------------------------------------------------------------");
         
-        System.out.println("A functional interface can also be used with a method references");
+        System.out.println("It’s also possible to assign a method references to a functional interface.");
         System.out.println("Here we use a static method ClassName::MethodName");
         IIntegerTest test = StaticReferencesMethods::IsPositive;
         System.out.println("test.Test(10): " +test.Test(10));
@@ -75,10 +76,11 @@ public class C14Main {
         System.out.println("generic.Test(10, 936): " + generic.Test(10, 936));       
         System.out.println("---------------------------------------------------------------------------");
 
-        System.out.println("It's possible to use some dfeault functional interface"
+        System.out.println("It's possible to use some defeault functional interface"
                 + " Founded inside java.util.function.");
         Predicate<Integer> p = x -> (x%2)==0;
         
+        Function<Integer,Integer> sum = x->x*2;
         System.out.println("java.util.function.Predicate: Predicate<Integer> p = x -> (x%2)==0");
         System.out.println("is ten even {p.test(10)}: " + p.test(10));
         System.out.println("is seven even {p.test(7)}: " + p.test(7));       
