@@ -15,4 +15,11 @@ public class Color {
             return false;
         return color ==((Color)o).color;
     }
+
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31 * result + color.hashCode();
+        return result;
+    }
 }
