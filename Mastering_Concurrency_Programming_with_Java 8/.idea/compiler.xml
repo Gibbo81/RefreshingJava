@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Mastering_Concurrency_Programming_with_Java 8" target="1.5" />
+      <module name="Mastering_Concurrency_Programming_with_Java 8" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

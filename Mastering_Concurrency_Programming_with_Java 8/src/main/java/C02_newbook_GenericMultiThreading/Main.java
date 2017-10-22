@@ -19,7 +19,7 @@ public class Main {
         Date end=new Date();
         System.out.printf("Serial: %d%n",end.getTime()-start.getTime());
 
-        /*
+        /*This take a long time but it's working fine
         ParallelIndividualMultiplier p1 = new ParallelIndividualMultiplier(4);
         resultSerial= new double[matrix1.length][matrix2[0].length];
         start=new Date();
